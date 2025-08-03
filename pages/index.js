@@ -23,4 +23,6 @@ export default function Accueil() {
                 className="w-full h-48 object-cover"
               />
               <div className="p-4">
-                <h2 className="
+                <h2 className="text-xl font-bold mb-2">
+  {annonce.titre || `${annonce.marque} ${annonce.modele} ${annonce.energie}`}
+</h2>
