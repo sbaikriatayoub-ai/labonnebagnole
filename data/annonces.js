@@ -1,4 +1,3 @@
-// data/annonces.js
 export const annonces = [
   {
     id: 1,
