@@ -1,4 +1,4 @@
-import { annonces } from '@/data/annonces';
+import { annonces } from '../../data/annonces';
 
 export default function AnnonceDetail({ annonce }) {
   if (!annonce) {
@@ -15,7 +15,7 @@ export default function AnnonceDetail({ annonce }) {
       />
       <p className="mb-2"><strong>Modèle:</strong> {annonce.modele}</p>
       <p className="mb-2"><strong>Année:</strong> {annonce.annee}</p>
-      <p className="mb-2"><strong>Kilométrage:</strong> {annonce.kilometrage} km</p>
+      <p className="mb-2"><strong>Kilométrage:</strong> {annonce.kilometrage.toLocaleString()} km</p>
       <p className="mb-2"><strong>Énergie:</strong> {annonce.energie}</p>
       <p className="mb-4"><strong>Description:</strong> {annonce.description}</p>
       <div className="bg-green-100 text-green-800 font-semibold px-4 py-2 rounded w-fit">
