@@ -1,8 +1,6 @@
-import React from 'react';
-
 export default function SellerProfile({ seller }) {
   return (
-    <div className="border p-4 rounded shadow max-w-md">
+    <div className="border p-4 rounded shadow max-w-md mx-auto mt-10">
       <h2 className="text-xl font-bold mb-4">Profil du vendeur</h2>
       <p><strong>Nom :</strong> {seller.name}</p>
       <p><strong>Note :</strong> {seller.rating} / 5</p>
